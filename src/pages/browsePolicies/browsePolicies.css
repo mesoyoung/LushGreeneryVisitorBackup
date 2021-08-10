@@ -1,0 +1,44 @@
+.headerAndDropdown{
+
+}
+
+#choiceCheckbox{
+right: 10%;
+}
+
+.policiesList{
+/* width: auto; */
+/* margin-left: 30%; */
+
+}
+
+.selectedPoliciesList{
+width: auto;
+}
+
+.browsePolicies{
+justify-content: center;
+align-items: center;
+}
+
+.toContactFormLink{
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 0.5em;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(224, 193, 193);
+}
+
+.toContactFormLink:hover{
+    background-color: rgb(187, 99, 99);
+    color: white;
+    font-size: 1.2em;
+}
+
+.contactFormBtn{
+    bottom: 10em;
+    right: 10em;
+    position: fixed;
+}
