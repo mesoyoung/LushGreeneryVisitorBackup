@@ -1,13 +1,13 @@
 .policyContainer{
-    width: 50%;
+    width: 100%;
 }
 
 .checkbox{
     -webkit-transform: scale(1.5);
     display: inline;
     margin-right: 1em;
-
 }
+
 
 .pc-name{
     font-size: 1.4em;

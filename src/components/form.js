@@ -74,6 +74,7 @@ class Form extends Component {
                         type='text'
                         value={contactInfo}
                         onChange={this.handleContactInfoChange}
+                        pattern = "[a-zA-Z][a-zA-Z0-9]{4,31}|[8-9]{1}[0-9]{7}"
                     />
                 </div>
 
@@ -88,7 +89,7 @@ class Form extends Component {
                 <div>
                     <label className='email'>Email*</label>
                     <input
-                        type='text'
+                        type='email'
                         placeholder='(Meetup details will be sent to this email)'
                         value={email}
                         onChange={this.handleEmailChange}
@@ -100,6 +101,7 @@ class Form extends Component {
                     <textarea
                         value={feedback}
                         onChange={this.handleFeedbackChange}
+                        placeholder = '(Optional)'
                     />
                 </div>
 

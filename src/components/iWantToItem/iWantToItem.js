@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './iWantToItem.css';
 
 
-const IWantToItem = (props) => {
+const IWantToItem = (e) => {
 
 
     var iWantToID = 0;
     function findiWantToID() {
-        iWantToID = props.id;
+        iWantToID = e.id;
         // alert(iWantToID);
         return iWantToID;
         
@@ -18,8 +18,8 @@ const IWantToItem = (props) => {
         <ui className='iWantToItem'>
 
             <Link to ='browsePolicies' className='linkStyle' onClick ={findiWantToID}>
-                <label htmlFor={props.id} href={props.href}>
-                    {props.name}
+                <label htmlFor={e.id} href={e.href}>
+                    {e.name}
                 </label>
 
             </Link>

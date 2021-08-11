@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
 const OPTIONS = [
-    "policy 1",
-    "policy 2",
-    "policy 3",
-    "hi"
+    "Show selected choices"
 ]
 
 class Checkbox extends Component {
