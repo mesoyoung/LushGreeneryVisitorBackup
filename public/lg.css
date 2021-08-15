@@ -1,0 +1,42 @@
+.bg {
+    background-image: url("./Images/bg_insurance.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url("./Images/bg_insurance2.jpg");
+background-position: top;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.bg3 {
+  background-image: url("./Images/bg_insurance3.jpg");
+background-position: top;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.bg4 {
+  background-image: url("./Images/bg_insurance4.jpg");
+background-position: top;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.nav > li > nav-link:hover{
+  color:#FFFFFF;
+}
+
+.text {
+  text-decoration: overline;
+  text-shadow: 5px 5px #FFFFFF;
+}
+
+.text-s {
+  text-decoration: overline;
+  text-shadow: 3px 3px #FFFFFF;
+}
+
