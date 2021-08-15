@@ -50,12 +50,12 @@
                             </a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link text-dark" href="lg_wwo.html">
+                            <a class="nav-link" style="color: white" href="lg_wwo.html">
                                 <h4>What We Offer</h4>
                             </a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" style="color: white" href="lg_contact.html">
+                            <a class="nav-link text-dark" href="lg_contact.html">
                                 <h4>About Us</h4>
                             </a>
                         </li>
@@ -66,25 +66,26 @@
     </header>
 
     <div class="text-left">
-        <div class="p-5 card mx-5 shadow-lg rounded bg-info bg-light" style="margin-top: 150px;">
-            <h1 class="text">Customer First</h1>
-            <p>We are working with organisations that are committed to provide you with the best service.</p>
+        <div class="p-5 card mx-5 shadow-lg rounded bg-info bg-gradient" style="margin-top: 150px;">
+            <h1 class="text">Wide Selection</h1>
+            <p>We have so many policies to choose from, that you will be spoiled for choices! So fret not, there will be
+                something that will fit your needs!</p>
             </a>
         </div>
-        <div class="p-5 card mx-5 shadow-lg rounded bg-warning bg-light" style="margin-top: 50px;">
-            <h1 class="text">A Band of Organisations</h1>
-            <p>We are a group of different organisations, coming together to help you choose the policies that fits you
-                most.</p>
+        <div class="p-5 card mx-5 shadow-lg rounded bg-warning bg-gradient" style="margin-top: 50px;">
+            <h1 class="text">Within-the-day Service</h1>
+            <p>Once you have connected with us, you can expect the meetup to be within the day, or even within 30
+                minutes after connecting!</p>
         </div>
-        <div class="p-5 card mx-5 shadow-lg rounded bg-light bg-gradient" style="margin-top: 50px;">
-            <h1 class="text">Our Office</h1>
-            <p>2 Orchard Turn, Singapore 238801</p>
-
-            <div id="map" class="shadow rounded"></div>
-            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-            <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8RUvi-SWVXQewjGxXqmnCZAb9rsNdT4g&callback=initMap&libraries=&v=weekly"
-                async></script>
+        <div class="p-5 card mx-5 shadow-lg rounded bg-success bg-gradient" style="margin-top: 50px;">
+            <h1 class="text">Best Prices in Town!</h1>
+            <p>We offer the best prices in Singapore! We only offer the best prices in Singapore!</p>
+        </div>
+        <div class="px-5 rounded" style="margin-top: 50px;">
+            <a role="button" class="btn btn-primary bg-gradient my-3 shadow hover-shadow"
+                style="height: 50px; width: 250px;" href="lg_products.html">
+                <h3>FIND OUT MORE</h3>
+            </a>
         </div>
     </div>
 
@@ -96,19 +97,16 @@
 </body>
 
 <script>
-    function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-        });
+    function validateForm() {
+        let a = document.forms["form1"]["form1"].value;
+        let b = document.forms["form1"]["form2"].value;
+        let c = document.forms["form1"]["form3"].value;
+        if ((a == "") || (b == "") || (c == "")) {
+            message = "Please fill all required fields.";
+        } else {
+            message = "Your contact request has been sent! Expect a reply from us within 1-3 business days.";
+        }
+        alert(message);
     }
 </script>
 
